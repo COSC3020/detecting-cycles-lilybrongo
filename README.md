@@ -15,3 +15,12 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The worst-case big $\Theta$ for my implementation would be $\Theta(|V| + |E|)$. The reason for this is that my hasCycle function should have a complexity of $|V|$. This is because the loop will iterate over every node within the graph. The helper function focuses on the number of edges in the graph. By getting the sum of all iterations of "neighbors" across all nodes is equal to the number of edges on a graph. So this function has a complexity of $|E|$. After combinging these processes we can assume that the worst-case big $\Theta$ complexity would be $\Theta (|V| + |E|)$.
+
+Referenced geeksforgeeks for Kruskal's Algorithm explination: https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+
+Also referenced geeks for geeks DFS: https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
+Used lecture slides to get a starting point for this problem and looked at Caden Mcfate's repository for a different approach and part of my test code (specified in test code which are Cadens).
+
